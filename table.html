@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loginpage</title>
+	<style>
+	      p {
+	      	margin: 0px;
+	      }
+	      #table1 {
+	      	width: 100%;
+	      	height: 100%;
+	      	background-color: DodgerBlue;
+	      	position: static;
+	      	transform: translate(0%);
+	      	box-shadow: 5px 10px 8px #888888;
+	      }
+	      #table2 {
+	      	position: absolute;
+	      	top: 50%;
+	      	left: 50%;
+	      	transform: translate(-50%,-50%);
+	      	width: 50%;
+	      
+	
+	      }
+	      h1 {
+	      	padding-right: 100px;
+	      	font-size: 40px;
+	      	text-align: center;
+	      	color: white;
+	      }
+	      h2 {
+	      	margin-top: -1px;
+	      	margin-bottom: 5px;
+	      }
+	      #td1 {
+	      	text-align: right;
+	      	padding-right: 15px;
+	      }
+	      #td2 {
+            font-size: 40px;
+            font-family: verdana;
+	      }
+		input {
+			margin-top: 10px;
+			font-family: sans-serif;
+		}
+		div {
+			margin-left: 500px;
+			margin-top: 40px;
+		}
+		#size1 {
+			 height:30px;
+			 width: 180px;
+			 font-size: 15px;
+			 border: solid DodgerBlue;
+			 border-radius: 8px;
+			 text-align: center;
+			 transition: width 1s;
+		}
+		#size1:hover,#size3:hover {
+			width: 220px;
+			border-color: violet;
+		}
+		#size2 {
+			margin-top: 20px;
+			height: 35px;
+			width: 380px;/* this it */
+			font-size: 15px; 
+			border:solid DodgerBlue;
+			border-radius: 8px;
+			margin-bottom: 10px;
+			padding-left: 10px;
+			transition: width 1s;
+		}
+		#size2:hover {
+			width: 420px;
+			border-color: red;
+		}
+		#size3 {
+			margin-left: 20px;
+			height: 30px;
+			width: 180px;
+			font-size: 15px;
+			border:solid DodgerBlue;
+			border-radius: 8px;
+			text-align: center;
+			transition: width 1s;
+		}
+		#Signup1 {
+			height: 35px;
+			width: 65px;
+			font-family: Arial;
+			font-size: 15px;
+			margin-left: 10px;
+			margin-bottom: 10px;
+			border-radius: 10px;
+			background-color: #32CD32;
+			transition: width 1s,height 1s;
+		}
+		#Signup1:hover {
+			width: 65px;
+			height: 50px;
+		}
+		#Signup2 {
+			height: 35px;
+			width: 65px;
+			font-family: Arial;
+			font-size: 15px;
+			margin-left: 10px;
+			margin-bottom: 10px;
+			border: solid DodgerBlue;
+			background-color: Seashell;
+			border-radius: 10px;
+			transition: width 1s,height 1s;
+		}
+		#Signup2:hover {
+			width: 65px;
+			height: 50px;
+			background-color: #32CD32;
+
+		}
+		body {
+			padding: 0px;
+			margin: 0px;
+			background-color: SeaShell;
+			font-family: verdana;
+		}
+		label {
+			font-size: 18px;
+			font-family: verdana;
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+	<p>
+		<table id="table1">
+			<td><h1>login</h1></td>
+			<td id="td1"><form action="http://www.wikipedia.org">
+    	 <label for="username">username:</label>
+    		<input style="border-style: solid;border-color: DodgerBlue; border-radius: 8px;padding-left: 13px;height: 20px;" id="username" type="text" required="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" size="34%">
+    		<label for="password">password:</label>
+    		<input style="border-style: solid;border-color: DodgerBlue; border-radius: 8px;padding-left: 13px;height: 18px;" id="password" type="password" required="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+    		<button id="Signup1">login</button><br>
+    		<a href="file:///F:/html/table.html" style="padding-right: 115px;padding-top: 0px;margin-top: 0px;font-family: verdana;font-size: 14px;">forgot password?</a>
+		</table>
+	</p>
+	<div>
+	<table id="table2">
+    <tr><td id="td2">Create a new account</td></tr>
+    	<tr><td><form action="http://www.wikipedia.org">
+    		<input id="size1" type="text" placeholder="Firstname" name="Firstname" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$">
+    		<input id="size3" type="text" placeholder="Surname" name="Surname" value="" required="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$"><br>
+    		<input id="size2" type="username" placeholder="Mobile number or email address" name="username" value="" required="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$"><br>
+    		<input id="size1" type="password" placeholder="password" name="password" value="" required="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"><br><br>
+    		<h2>Birthday:</h2>
+    		<select name="date">
+    			<option value="date">date</option>
+    			<option value="1">1</option>
+    			<option value="2">2</option>
+    			<option value="3">3</option>
+    			<option value="4">4</option>
+    			<option value="5">5</option>
+    			<option value="6">6</option>
+    			<option value="7">7</option>
+    			<option value="8">8</option>
+    			<option value="9">9</option>
+    			<option value="10">10</option>
+    			<option value="11">11</option>
+    			<option value="12">12</option>
+    			<option value="13">13</option>
+    			<option value="14">14</option>
+    			<option value="15">15</option>
+    			<option value="16">16</option>
+    			<option value="17">17</option>
+    			<option value="18">18</option>
+    			<option value="19">19</option>
+    			<option value="20">20</option>
+    			<option value="21">21</option>
+    			<option value="22">22</option>
+    			<option value="23">23</option>
+    			<option value="24">24</option>
+    			<option value="25">25</option>
+    			<option value="26">26</option>
+    			<option value="27">27</option>
+    			<option value="28">28</option>
+    			<option value="29">29</option>
+    			<option value="30">30</option>
+    			<option value="31">31</option>
+    		</select>
+    		<select name="month">
+    			<option value="month">month</option>
+    			<option value="jan">jan</option>
+    			<option value="feb">feb</option>
+    			<option value="mar">mar</option>
+    			<option value="apr">apr</option>
+    			<option value="may">may</option>
+    			<option value="june">june</option>
+    			<option value="july">july</option>
+    			<option value="august">august</option>
+    			<option value="setember">setember</option>
+    			<option value="october">october</option>
+    			<option value="november">november</option>
+    			<option value="december">december</option>
+    		</select>
+    		<select name="year">
+    			<option value="year">year</option>
+    			<option value="1990">1990</option>
+    			<option value="1991">1991</option>
+    			<option value="1992">1992</option>
+    			<option value="1993">1993</option>
+    			<option value="1994">1994</option>
+    			<option value="1995">1995</option>
+    			<option value="1996">1996</option>
+    			<option value="1997">1997</option>
+    			<option value="1998">1998</option>
+    			<option value="1999">1999</option>
+    			<option value="2000">2000</option>
+    			<option value="2001">2001</option>
+    			<option value="2002">2002</option>
+    			<option value="2003">2003</option>
+    			<option value="2004">2004</option>
+    			<option value="2005">2005</option>
+    			<option value="2006">2006</option>
+    			<option value="2007">2007</option>
+    			<option value="2008">2008</option>
+    			<option value="2009">2009</option>
+    			<option value="2010">2010</option>
+    			<option value="2011">2011</option>
+    			<option value="2012">2012</option>
+    			<option value="2013">2013</option>
+    			<option value="2014">2014</option>
+    			<option value="2015">2015</option>
+    			<option value="2016">2016</option>
+    			<option value="2017">2017</option>
+    			<option value="2018">2018</option>
+    			<option value="2019">2019</option>
+    		</select><br>
+    		<input type="radio" name="gender" value="male">Male<br>
+            <input type="radio" name="gender" value="female">Female<br>
+            <input type="radio" name="gender" value="other">Other<br>
+           <p>By clicking Sign Up, you agree to our Terms, Data Policy and Cookie <br>Policy.You may receive SMS notifications from us and can opt out at any time.</p>
+    		<br><br><button id="Signup2">signup</button>
+    	 </form></td></tr>
+</table></div>
+</body>
+</html>
